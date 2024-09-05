@@ -47,12 +47,14 @@ async function sendDefaultMessages({ userMessage }) {
   }
 }
 
-const defaultResponse = [
-  {
-    text: "I'm sorry, there seems to be an error with my brain, or I didn't understand. Could you please repeat your question?",
-    facialExpression: "sad",
-    animation: "Idle",
-  },
-];
+const defaultResponse = {
+  messages: [
+    {
+      text: "I'm sorry, there seems to be an error with my brain, or I didn't understand. Could you please repeat your question?",
+      facialExpression: "sad",
+      animation: "Idle",
+    },
+  ]
+};
 
 export { sendDefaultMessages, defaultResponse };
